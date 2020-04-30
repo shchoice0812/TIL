@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/new_game"
+        android:icon="@drawable/ic_open_in_new_black_24dp"
+        android:title="새로운 게임"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/file"
+        android:title="파일">
+        <menu>
+            <item
+                android:id="@+id/create_new"
+                android:title="새로 만들기" />
+            <item
+                android:id="@+id/open"
+                android:title="열기"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:title="도움말" />
+</menu>

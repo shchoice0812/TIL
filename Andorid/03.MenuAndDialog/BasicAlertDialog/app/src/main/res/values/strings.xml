@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasicAlertDialog</string>
+    <string name="title">프로그램을 종료하려면 종료 버튼을 눌러주세요!</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable 폴더 -> 우클릭 -> new -> drawable resource file -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke android:width="3dp"
+        android:color="@color/colorPrimaryDark"/>
+</shape>

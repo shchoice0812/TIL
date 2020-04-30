@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginEnd="16dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:text="alignParentTop | right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:text="alignParentTop"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:text="centerVertical left"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:text="centerVertical right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:text="centerVertical left"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#fff"
+            android:text="centerVertical right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/base"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#000"
+            android:text="기준 엘리먼트"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ff00ff"
+            android:text="1"
+            android:textSize="20sp"
+            android:layout_above="@id/base"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ff00ff"
+            android:text="2"
+            android:textSize="20sp"
+            android:layout_above="@id/base"
+            android:layout_toLeftOf="@id/base"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ff00ff"
+            android:text="3"
+            android:textSize="20sp"
+            android:layout_below="@id/base"
+            android:layout_alignLeft="@id/base"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

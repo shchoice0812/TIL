@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DialogExercise</string>
+    <string-array name="bellChoice">
+        <item>눈꽃</item>
+        <item>단풍나무</item>
+        <item>시간여행</item>
+        <item>오아시스</item>
+        <item>심플벨</item>
+    </string-array>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="진동">
+
+        <CheckBoxPreference
+            android:defaultValue="소리"
+            android:key="vibrate"
+            android:title="진동 여부" />
+
+        <ListPreference
+            android:key="vibrate_intensity"
+            android:title="진동 세기"
+            android:entries="@array/entry_list_vibrate"
+            android:entryValues="@array/entryvalue_list_vibrate"
+            android:dialogTitle="진동 세기"
+            android:dependency="vibrate"
+            android:summary="@string/summary_vibrate"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory>
+        <ListPreference
+            android:key="bell_sound"
+            android:title="벨소리"
+            android:entries="@array/entries_list_sound"
+            android:entryValues="@array/entryvalues_list_sound"
+            android:dialogTitle="벨소리"
+            android:defaultValue="0"
+            />
+        <EditTextPreference
+            android:key="volume"
+            android:title="볼륨"
+            android:summary="@string/summary_volume" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

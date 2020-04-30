@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FF6600">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="도서정보 입력"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_frame">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:text="도서명"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/in_title"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:ems="16"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:text="저  자"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/in_author"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:ems="16"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:text="출판사"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:id="@+id/in_press"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:ems="16"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="저  장"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:background="#AEFF1C"
+        android:onClick="book_add"
+        android:elevation="10dp"/>
+</LinearLayout>

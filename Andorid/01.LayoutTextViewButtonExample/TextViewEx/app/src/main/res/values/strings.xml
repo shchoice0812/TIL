@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TextViewEx</string>
+    <string name="button_text">입력완료</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values -> 우클릭 -> new -> values resource files -->
+<!-- dimen 은 예약어-->
+<resources>
+    <dimen name="titleSize">35sp</dimen>
+    <dimen name="subtitleSize">30sp</dimen>
+    <dimen name="answertextSize">40sp</dimen>
+    <dimen name="flag_width">227dp</dimen>
+    <dimen name="flag_height">150dp</dimen>
+</resources>

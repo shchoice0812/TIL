@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#09017E"
+    tools:context="com.example.bookdatabase.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="도서정보 데이터베이스"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:text="도서정보 조회"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#AEFF1C"
+        android:id="@+id/button_search"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowColor="#6B6B6B"
+        android:onClick="search"
+        android:elevation="10dp"/>
+
+    <Button
+        android:text="도서정보 전체조회"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#AEFF1C"
+        android:id="@+id/button_searchall"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowColor="#6B6B6B"
+        android:onClick="search_all"
+        android:elevation="10dp"/>
+
+    <Button
+        android:text="도서정보 추가"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button_add"
+        android:layout_below="@+id/button_searchall"
+        android:background="#AEFF1C"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowColor="#6B6B6B"
+        android:onClick="add"
+        android:elevation="10dp"/>
+
+
+    <Button
+        android:text="도서정보 전체 삭제"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button_delete"
+        android:layout_below="@+id/button_add"
+        android:background="#AEFF1C"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowColor="#6B6B6B"
+        android:onClick="delete"
+        android:elevation="10dp"/>
+</RelativeLayout>

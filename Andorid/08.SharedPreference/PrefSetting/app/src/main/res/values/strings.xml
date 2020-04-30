@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PrefSetting</string>
+    <string name="summary_vibrate">진동세기를 설정합니다.</string>
+    <string name="summary_volume">소리 크기를 설정합니다.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

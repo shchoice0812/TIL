@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BabyBooks</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="book1">설민석의 한국사 대모험 1</string>
+    <string name="book2">스페셜솔져 코믹스 4</string>
+    <string name="book3"> 마법천자문 39 </string>
+    <string name="book4"> 아홉살 마음 사전 </string>
+    <string name="book5">좀비고등학교 코믹스 </string>
+    <string name="book6"> 건방진 장루이와 68일</string>
+    <string name="book7">일투성이 제아</string>
+    <string name="book8">후 who? special 문재인(</string>
+    <string name="book9">Why? 와이 3D 프린팅</string>
+    <string name="book10">인공지능 세계에서 살아남기 1</string>
+    <string name="book11">미움받아도 괜찮아 </string>
+    <string name="book12">추리 천재 엉덩이 탐정 3 </string>
+
+    <string name="author1">설민석</string>
+    <string name="author2">유대영 글</string>
+    <string name="author3">올댓스토리</string>
+    <string name="author4">박성우 글</string>
+    <string name="author5">배아이 글</string>
+    <string name="author6">황선미</string>
+    <string name="author7">황선미</string>
+    <string name="author8">김승민</string>
+    <string name="author9">조영선</string>
+    <string name="author10">곰돌이co.</string>
+    <string name="author11">황재연</string>
+    <string name="author12">트롤</string>
+
+</resources>
+

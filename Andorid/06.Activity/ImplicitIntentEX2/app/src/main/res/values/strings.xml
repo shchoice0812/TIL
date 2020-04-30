@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">ImplicitIntentEX</string>
+    <string-array name="intents">
+        <item>Open Borwaer</item>
+        <item>Dial</item>
+        <item>Show Map</item>
+        <item>Show Contacts</item>
+        <item>Edit Contacts</item>
+        <item>Using Camera</item>
+    </string-array>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MiniCalculator</string>
+    <string name="title">미니 계산기</string>
+</resources>

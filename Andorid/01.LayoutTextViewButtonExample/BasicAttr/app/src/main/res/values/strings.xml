@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicAttr</string>
+    <string name="button_text">버튼</string>
+
+</resources>

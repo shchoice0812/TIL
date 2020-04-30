@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- 다이어로그 배경 지정 -->
+        <item name="android:windowBackground">@drawable/background_dialog</item>
+        <!-- 텍스트 색상 -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 버튼 색상 -->
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+    </style>
+
+</resources>

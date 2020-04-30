@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SpinnerEx</string>
+    <string name="spinner_title">관심 분야를 선택해주세요:</string>
+</resources>

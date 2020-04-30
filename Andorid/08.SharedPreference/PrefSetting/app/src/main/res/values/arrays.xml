@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entry_list_vibrate">
+        <item>약하게</item>
+        <item>중간</item>
+        <item>강하게</item>
+    </string-array>
+
+    <string-array name="entryvalue_list_vibrate">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="entries_list_sound">
+        <item>As times goes by</item>
+        <item>Fly to the Sky</item>
+        <item>Rain Walts</item>
+        <item>Rainy City</item>
+        <item>Life\'s Good</item>
+    </string-array>
+
+    <string-array name="entryvalues_list_sound">
+        <item>as_times_goes_by</item>
+        <item>fly_to_the_sky</item>
+        <item>rail_walts</item>
+        <item>rainy_city</item>
+        <item>lifes_good</item>
+    </string-array>
+
+</resources>
