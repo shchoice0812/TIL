@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON innerHTML</title>
+</head>
+
+<body>
+    <h1>JSON innerHTML</h1>
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        var myObj = {
+            "friends": [{
+                "firstname": "Alice", 
+                "lastname": "Kim"
+            },
+            {
+                "firstname": "Bob", 
+                "lastname": "Sponge"
+            },
+            {
+                "firstname": "Cindy",
+                "lastname": "Lee"
+            }]
+        }
+        
+        var users = myObj.friends
+        var html = '';
+
+        myObj.friends.splice(3,0,{
+            "firstname": "New",
+            "lastname" : "Person"
+        })
+
+        // 반복문 방법 1 (for문 length 활용)
+        for(i=0; i<myObj.friends.length; i++){
+            html += (Number(i)+1) + '. ' + users[i].firstname + ' ' + users[i].lastname + '<br>'
+        }
+
+        // 반복문 방법 2 (forEach문 활용)
+        var output = document.getElementById('output');
+
+        myObj.friends.forEach(function(item){
+            output.innerHTML = item.firstname + ' ' + item.lastname + '<br>'
+        })
+
+        output.innerHTML = html;
+
+        // 반복문 방법 3 (for in 활용)
+        for(var i in users){
+            html += (Number(i)+1) + '. ' + users[i].firstname + ' ' + users[i].lastname + '<br>'
+        }
+        
+        document.getElementById('output').innerHTML = html;
+
+    </script>
+</body>
+
+</html>
