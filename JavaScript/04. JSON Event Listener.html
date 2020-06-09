@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON</title>
+</head>
+
+<body>
+    <h1>Learn JSON</h1>
+    <div id="output"></div>
+    <form id="myForm">
+        <input type="text" name="first" value="Shawn"><br>
+        <input type="text" name="last" value="Choi"><br>
+        <input type="text" name="email" value="shchoice0812@gmail.com"><br>
+        <input type="text" name="company" value="Individual"><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script type="text/javascript">
+        var myForm = document.getElementById('myForm');
+
+        window.onload = function () {
+            if (sessionStorage['person'] != null) {
+                var data = JSON.parse(sessionStorage['person'])
+                var message = 'Welcome ' + data.first + ' ' + data.last + '\'s homepage!';
+                document.getElementById('output').innerHTML = message;
+                console.log(data)
+            }
+        }
+
+        myForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var data = JSON.stringify(formData(myForm));
+            if (data) {
+                sessionStorage['person'] = data;
+            }
+            console.log(data)
+        })
+
+        function formData(form) {
+            var el = form.querySelectorAll('input[type="text"]');
+            var myData = {};
+            for (var i = 0; i < el.length; i++) {
+                var name = el[i].name;
+                var value = el[i].value;
+                console.log(name, value)
+                myData[name] = value
+            }
+
+            return myData;
+        }
+    </script>
+</body>
+
+</html>
