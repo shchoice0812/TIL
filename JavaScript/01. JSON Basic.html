@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON BASIC</title>
+</head>
+
+<body>
+    <h1>Json Basic</h1>
+    
+    <script type="text/javascript">
+        var people = {
+            "person1" : {
+                "firstname": "Shwan",
+                "lastname": "Choi",
+                "age": 30,
+                "Student": true
+            },
+            "person2" : {
+                "firstname": "NYung",
+                "lastname": "Ann",
+                "age": 36,
+                "Student": false
+            },
+            "Hobbies" : [
+                "Programming",
+                "golf"
+            ],
+            "Cars": [{
+                "make" : "BENZ",
+                "year" : 2019
+            },
+            {
+                "make" : "AUDI",
+                "year" : 2012
+            }
+            ]
+        };
+
+        console.log(people);
+
+        // JAVASCRIPT CNT를 통해 자유로운 Key값 추출
+        var person = {
+            "firstname": "Shawn",
+            "lastname" : "Choi",
+            "car1": "BENZ",
+            "car2": "AUDI"
+        }
+
+        var str1 = "car";
+        var cnt = 1;
+
+        console.log(person[str1+cnt]);
+        cnt++;
+        console.log(person[str1+cnt]);
+
+        var myObj = {
+            "friends": [{
+                "firstname": "Alice", 
+                "lastname": "Kim"
+            },
+            {
+                "firstname": "Bob", 
+                "lastname": "Sponge"
+            },
+            {
+                "firstname": "Cindy",
+                "lastname": "Lee"
+            }]
+        }
+        
+        var users = myObj.friends
+        for(var i in users){
+            console.log(users[i])
+            console.log(users[i].firstname + ' ' + users[i].lastname)
+        }
+    </script>
+</body>
+
+</html>
