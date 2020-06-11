@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON File update When Button Checked</title>
+</head>
+
+<body>
+    <h1>JSON File update When Button Checked</h1>
+    <div id="output"></div>
+    <ul id="phoneList"></ul>
+    <script type="text/javascript">
+        // String 형태로 나온다 
+        var data = '{"phone": {"아이폰 11": true, "아이패드 프로" : false, "아이폰 10": true, "맥 프로": false}}';
+        console.log(data)
+        // JSON 포맷으로 나온다 Key, Value
+        var dataJSON = JSON.parse(data);
+        console.log(dataJSON)
+
+        var output = document.getElementById('output')
+        var phoneList = document.querySelector('#phoneList');
+
+        for(var key in dataJSON.phone){
+            console.log(key, dataJSON.phone[key])
+            var status = !dataJSON.phone[key] ? '':'checked';
+            var html = '<li>'+key+'<input type="checkbox" value="'+key+'" ></li>';
+            phoneList.innerHTML += html;
+            addEvents()
+        }
+
+        function addEvents(){
+            var checkboxes = document.querySelectorAll('#phoneList input[type="checkbox"]')
+            for(var index in checkboxes){
+                checkboxes[index].onchange=updateJSON;
+            }
+            console.log(checkboxes)
+        }
+
+        function updateJSON(){
+            var key = event.target.value;
+            console.log(key, event.target.checked)
+            dataJSON.phone[key] = event.target.checked
+        }
+
+    </script>
+</body>
+
+</html>
