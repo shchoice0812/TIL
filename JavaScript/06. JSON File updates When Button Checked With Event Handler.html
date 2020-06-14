@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON File update When Button Checked</title>
+</head>
+
+<body>
+    <h1>JSON File update When Button Checked</h1>
+    <div id="output">
+        <ul id="foodList"></ul>
+    </div>
+    <form id="myForm">
+        food : <input type="text" name="food" placeholder="add food">
+        <input type="submit" value="Add new food">
+    </form>
+
+    <script type="text/javascript">
+        var dataJSON ="";        
+        var output = document.getElementById('output')
+        var foodList = document.querySelector('#foodList');
+
+        window.onload = function(){
+            if(sessionStorage['food'] != null){
+                dataJSON = JSON.parse(sessionStorage['food']);
+            }
+            else{
+                var data = '[{"food":"피자", "like": false}, {"food": "스테이크", "like": false}, {"food": "치킨", "like": false}, {"food":"햄버거", "like": false}]';
+                dataJSON = JSON.parse(data);
+            }
+            buildCheckBoxes(dataJSON)
+        }
+
+        function buildCheckBoxes(data){
+            for(var key in data){
+                var status = data[key].like ? 'checked':' ';
+                var html = '<li>'+data[key].food+'<input type="checkbox" value=" '+key+'" '+status+'></li>';
+                foodList.innerHTML += html;
+            }
+            addEvents()
+        }
+        
+
+        function addEvents(){
+            var checkboxes = document.querySelectorAll('#foodList input[type="checkbox"]')
+            for(var index in checkboxes){
+                checkboxes[index].onchange=updateJSON;
+            }
+            console.log(checkboxes)
+        }
+
+        function updateJSON(){
+            var key = event.target.value;
+            console.log(key, event.target.checked)
+            dataJSON[key] = event.target.checked
+        }
+
+    </script>
+</body>
+
+</html>
