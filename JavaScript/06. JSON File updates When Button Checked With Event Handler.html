@@ -20,6 +20,12 @@
         var dataJSON ="";        
         var output = document.getElementById('output')
         var foodList = document.querySelector('#foodList');
+        
+        document.getElementById('myForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            var tempValue = document.querySelector('input[name="food"]').value
+            addNewItem({"food": tempValue, "status":false})
+        })
 
         window.onload = function(){
             if(sessionStorage['food'] != null){
@@ -30,6 +36,12 @@
                 dataJSON = JSON.parse(data);
             }
             buildCheckBoxes(dataJSON)
+        }
+
+        function addNewItem(data){
+            // var status = data.status ? 'checked':' ';
+            foodList.innerHTML += '<li>'+data.food+'<input type="checkbox" value=" '+dataJSON.length+'"></li>';
+            dataJSON.push(data)
         }
 
         function buildCheckBoxes(data){
