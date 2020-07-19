@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("p:first").css("background-color", "yellow");
+		$("p:first-child").css("color", "orange");
+		$("p:first-of-type").css("font-size", "30px");
+	});
+</script>
+</head>
+<body>
+	<p>p 태그</p>
+	<hr/>
+	<div>
+		<p>div 안의 p 태그</p>
+		<p>div 안의 p 태그</p>
+		<p>div 안의 p 태그</p>
+	</div>
+	<hr/>
+	<div>
+		<div>div 안의 div 태그</div>
+		<p>div 안의 p 태그</p>
+		<p>div 안의 p 태그</p>
+	</div>
+</body>
+</html>
