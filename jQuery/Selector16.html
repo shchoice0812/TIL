@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("p[title ~= 'aa']").css("color", "red");
+		$("p[title *= 'aa']").css("background-color", "yellow");
+	});
+</script>
+</head>
+<body>
+	<p title="aaa4">title이 aaa4인 p태그</p>
+	<p title="aaa5">title이 aaa5인 p태그</p>
+	<p title="aa a6">title이 aa a6인 p태그</p>
+	<p title="aa">title이 aa인 p태그</p>
+</body>
+</html>
