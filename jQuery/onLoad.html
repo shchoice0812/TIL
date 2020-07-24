@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window.onload</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+
+        // javascript
+        // window.onload = function(){
+        //     var result = document.getElementById("result");
+        //     result.innerHTML += "onload 1<br>"
+        // }
+        // window.onload = function(){
+        //     var result = document.getElementById("result");
+        //     result.innerHTML += "onload 2<br>"
+        // }
+
+
+        //jQuery
+        $(document).ready(function(){
+            $("#result").append("ready <br>");
+        });
+
+        $(document).ready(function(){   // == $(funtion(){})
+            $("#result").append("ready 2<br>");
+        });
+
+        $(function(){
+            $("#result").append("ready 3<br>");
+        })
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>
